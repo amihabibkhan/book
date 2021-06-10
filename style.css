@@ -1,0 +1,68 @@
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'SolaimanLipi', sans-serif;
+}
+
+.container{
+    width: 1140px;
+    margin: 100px auto 0; 
+}
+.single_book{
+    width: 80px;
+    height: 330px;
+    background-color: brown;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: inset 8px 8px 10px 0px #ffffff69;
+    position: relative;
+    float: left;
+    transform: rotate(-25deg); 
+    transition: all .3s;
+}
+.single_book:hover{
+    transform: rotate(-25deg) scale(1.1);
+}
+.single_book .book_info{
+    height: 80px;
+    width: 330px; 
+    box-sizing: border-box;
+    transform: rotate(90deg);
+    position: absolute;
+    left: -125px;
+    top: 125px;
+}
+.single_book .book_info h2,
+.single_book .book_info h3{
+    color: white; 
+    margin-bottom: 0;
+    text-align: center;
+}
+.single_book .book_info h2{
+    font-size: 18px;
+    padding-top: 12px;
+    font-weight: 600;
+} 
+.single_book .book_info h3{
+    font-size: 16px;
+    font-weight: normal;
+}  
+
+
+.container .single_book:not(:last-child){
+    margin-right: 10px;
+}
+.container .single_book:not(:last-child)::after{
+    height: calc(100% - 55px);
+    width: 5px;
+    background-color: black;
+    position: absolute;
+    right: -5px;
+    content: '';
+    bottom: 3px;
+}
+ 
